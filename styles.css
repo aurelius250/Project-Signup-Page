@@ -17,9 +17,52 @@ body {
     border: 5px blue solid;
     background-image: url(/imgs/sean-lee-Yli_dIlJ2Sk-unsplash.jpg);
     background-size: cover;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
+.transparent-inner-div { 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    border: 5px yellow solid;
+}
+.logo { 
+    width: 9em;
+    filter:invert();
+}
+
+.transparent-text { 
+    font-size: 6em;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.left-transparent-div { 
+    margin-top: 10em;
+    width: 100%;
+    background: rgb(0, 0, 0, 0.5);
+    margin-bottom: auto;
+    border: 5px green solid;
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.img-credit { 
+    color: white;
+    margin-top: auto; 
+    font-size: 14px; 
+}
+
+.img-credit a { 
+    text-underline-position: under
+}
 .right-outer-div { 
     width: 66%;
     height: 100%;
