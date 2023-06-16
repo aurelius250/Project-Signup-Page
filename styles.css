@@ -1,9 +1,14 @@
 html { 
     box-sizing: border-box;
+    margin: 0;
 }
 body { 
     height: 100%;
     margin: 0;
+}
+
+p { 
+    font-family: sans-serif;
 }
 
 /* quicksand-regular - latin */
@@ -17,6 +22,7 @@ body {
 
 .outermost-div { 
     display: flex;
+    border: 5px solid black;
     height: 100%;
 }
 
@@ -40,6 +46,7 @@ body {
     align-items: center; 
     border: 5px yellow solid;
 }
+
 .logo { 
     width: 9em;
     filter:invert();
@@ -65,13 +72,20 @@ body {
 
 }
 
-.right-upper-div p { 
-    font-weight: bold;
+.right-outer-div { 
+    width: 66%;
+    padding: 5px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border: 5px red solid;
+
 }
+
 .right-middle-div { 
-    border: 5px black solid; 
-    padding-top: 5em; 
-    padding-bottom: 5em; 
+    border: 5px green solid; 
+    /* padding-top: 5em; 
+    padding-bottom: 10em;  */
     height: 33%;
 }
 
@@ -84,19 +98,30 @@ body {
 
 .right-lower-div { 
     border: 5px yellow solid; 
-    height: 33%; 
-    padding-top: 5em; 
+    /* padding-top: 5em; 
     padding-bottom: 5em;
-    padding-left: 1em;
+    padding-left: 1em; */
+    height: 33%;
+
 }
 
 .right-upper-div { 
-    height: 33%; 
     border: 5px orange solid; 
-    padding-top: 2em; 
-    padding-bottom: 1em;
+    padding-top: 4em; 
+    height: 33%;
+    padding-bottom: 2em;
+    padding-left: 1em;
+    padding-right: 10em;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
 }
 
+
+.right-upper-div p { 
+    font-weight: 550;
+    font-size: 1.25em;
+}
 .img-credit { 
     color: white;
     margin-top: auto; 
@@ -106,10 +131,10 @@ body {
 .img-credit a { 
     text-underline-position: under
 }
-.right-outer-div { 
-    width: 66%;
-    height: 100%;
+
+.form-pair { 
     display: flex;
     flex-direction: column;
-    border: 5px red solid;
+    width: 20vh;
+    margin-left: 2em;
 }
