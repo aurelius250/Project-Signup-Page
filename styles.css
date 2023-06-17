@@ -1,6 +1,10 @@
 html { 
     box-sizing: border-box;
     margin: 0;
+    background-color: #efefef;
+}
+* { 
+    box-sizing: border-box;
 }
 body { 
     height: 100%;
@@ -9,6 +13,16 @@ body {
 
 p { 
     font-family: sans-serif;
+}
+
+input,
+textarea,
+select,
+button {
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* quicksand-regular - latin */
@@ -84,16 +98,19 @@ p {
 
 .right-middle-div { 
     border: 5px green solid; 
-    /* padding-top: 5em; 
-    padding-bottom: 10em;  */
+    background-color: white;
     height: 33%;
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0;
 }
 
-.right-lower-div button { 
-    padding: 1em;
-    background-color:burlywood;
-    border-radius: 0.8em; 
-    border: none;
+.upper-form-div { 
+    display: flex; 
+    padding: 0.25em; 
+    width: 100%;
+    margin-right: 15em;
 }
 
 .right-lower-div { 
@@ -110,14 +127,22 @@ p {
     padding-top: 4em; 
     height: 33%;
     padding-bottom: 2em;
-    padding-left: 1em;
+    padding-left: 2em;
     padding-right: 10em;
     display: flex; 
     flex-direction: column;
     justify-content: center;
 }
 
-
+input { 
+    width: 15em;
+    border-color: #E5E7EB;
+    box-shadow: none;
+}
+label { 
+    font-size: 12px; 
+    letter-spacing: 1.25px;
+}
 .right-upper-div p { 
     font-weight: 550;
     font-size: 1.25em;
@@ -135,6 +160,45 @@ p {
 .form-pair { 
     display: flex;
     flex-direction: column;
+    margin-right: 4em;
     width: 20vh;
+    margin-left: 2em;
+    margin-bottom: 1em;
+
+}
+
+.form-header { 
+    font-weight: bold; 
+    /* font-size: 1.5em; */
+    margin-left: 2.2em;
+    margin-top: 0.5em;
+}
+button:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+button {
+    font: bold 0.8em sans-serif;
+    color: white;
+    border: 2px solid#333;
+    border-radius: 5px;
+    background: none;
+    cursor: pointer;
+    padding: 0.9em;
+    width: 15em;
+    background-color:burlywood;
+    border: none;
+    margin-left: 2.7em; 
+    margin-top: 2em; 
+}
+
+input:focus,
+textarea:focus {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0.25em 10px rgba(0,0,0,0.2);
+}
+
+button + p { 
     margin-left: 2em;
 }
