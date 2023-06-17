@@ -206,3 +206,7 @@ textarea:focus {
 button + p { 
     margin-left: 2em;
 }
+
+input[type="tel"]:invalid:active { 
+    border: red 5px solid; 
+}
