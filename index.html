@@ -36,7 +36,7 @@
                     <p class = "form-header"> Let's do this! </p>
                 </div>
                
-            <form action="" method="post" id="form1"> 
+            <form action="" onsubmit="return verifyPassword()" method="post" id="form1"> 
 
                 <div class = "upper-form-div"> 
                         <div class="form-pair"> 
@@ -65,11 +65,11 @@
                 <div class = "upper-form-div"> 
                         <div class="form-pair"> 
                             <label for="pwd">PASSWORD</label>
-                            <input id="pwd" name="pwd" type="password">    
+                            <input id="pwd" name="pwd" type="password" value="" required>    
                         </div>
                         <div class="form-pair"> 
                             <label for="first">CONFIRM PASSWORD</label>
-                            <input id="pwd" name="first" type="text" pattern="">    
+                            <input id="confirm-pwd" name="confirm-pwd" type="password" value="" required>    
                         </div>
                     </div>
                 </div>
