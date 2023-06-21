@@ -141,7 +141,7 @@ button {
     height: 36.3%;
     padding-bottom: 2em;
     padding-left: 2em;
-    padding-right: 10em;
+    padding-right: 20em;
     display: flex; 
     flex-direction: column;
     justify-content: center;
@@ -161,7 +161,7 @@ label {
     letter-spacing: 1.25px;
 }
 .right-upper-div p { 
-    font-weight: 550;
+    font-weight: 500;
     font-size: 1.25em;
 }
 .img-credit { 
@@ -169,6 +169,14 @@ label {
     margin-top: auto; 
     font-size: 0.8em; 
     font-weight: 200;
+}
+
+p > a { 
+    color: burlywood;
+}
+
+p > a:visited { 
+    color:burlywood;
 }
 
 .img-credit a { 
@@ -229,6 +237,21 @@ button + p {
     
 }
 
+.error {
+    width: 100%;
+    padding: 0;
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+  }
+
+.error.active {
+    padding: 0.3em;
+}  
+
 input[type="tel"]:invalid:active { 
     border: red 5px solid; 
 }
+

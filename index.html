@@ -27,9 +27,9 @@
 
         <div class="right-outer-div">
             <div class="right-upper-div"> 
-                <p>This is not a real online service! You know you need something like this in your life to help you something like this to help you realize your deepest dreams. Sign up now to get started.
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.
                 </p>
-                <p> You know you want to.</p>
+                <p> You <i>know</i> you want to.</p>
             </div>
             <div class = "right-middle-div">
                 <div>
@@ -41,12 +41,12 @@
                 <div class = "upper-form-div"> 
                         <div class="form-pair"> 
                             <label for="first">FIRST NAME</label>
-                            <input id="first" name="first" type="text">    
+                            <input id="first" name="first" type="text" required>    
                         </div>
 
                         <div class="form-pair"> 
-                            <label for="first">LAST NAME</label>
-                            <input id="first" name="first" type="text">    
+                            <label for="last">LAST NAME</label>
+                            <input id="last" name="last" type="text" required>    
                         </div>
                 </div>
                 
@@ -54,11 +54,12 @@
                 <div class = "upper-form-div"> 
                         <div class="form-pair"> 
                             <label for="first">EMAIL</label>
-                            <input id="email" name="email" type="email">    
+                            <input id="email" name="email" type="email" required>   
+                            <span class="error" aria-live="polite"></span> 
                         </div>
                         <div class="form-pair"> 
                             <label for="phone-no">PHONE NUMBER</label>
-                            <input id="phone-no" name="phone-no" type="tel">    
+                            <input id="phone-no" name="phone-no" type="tel" required>    
                         </div>
                 </div>
                 
@@ -80,9 +81,12 @@
                 <button type="button" for="form1"> 
                     Create Account
                 </button>
-                <p> Already have an account? Log in</p>
+                <p> Already have an account? <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Log in </a> </p>
+
             </div>
         </div>
+
+
     </div>  
 </body>
 </html>
