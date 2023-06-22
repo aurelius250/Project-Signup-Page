@@ -107,7 +107,7 @@ button {
 .right-middle-div { 
     /* border: 5px green solid;  */
     background-color: white;
-    height: 29%;
+    height: 40%;
     margin: 0;
     display: flex; 
     /* flex-wrap: wrap; */
@@ -131,14 +131,14 @@ button {
     /* padding-top: 5em; 
     padding-bottom: 5em;
     padding-left: 1em; */
-    height: 34.5%;
+    height: 30.5%;
 
 }
 
 .right-upper-div { 
     /* border: 5px orange solid;  */
     padding-top: 4em; 
-    height: 36.3%;
+    height: 29.3%;
     padding-bottom: 2em;
     padding-left: 2em;
     padding-right: 20em;

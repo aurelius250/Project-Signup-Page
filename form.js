@@ -26,17 +26,23 @@ email.addEventListener("input", (event) => {
 });
 
 firstName.addEventListener("input", (event) => { 
-    if(firstName.validity.valid) { 
+    if (firstName.value.length === 0) { 
         firstNameError.textContent = ""; 
         firstNameError.className = "error"; 
     } else { 
-        showErrorFirstName();
-    }
+        namesShowError();
+    } 
 });
+
 form.addEventListener("submit", (event) => { 
     if (!email.validity.valid) { 
         showError();
         event.preventDefault(); 
+    } 
+
+    if (!firstName.validity.valid) { 
+        namesShowError();
+        event.preventDefault();
     }
 });
 
@@ -52,15 +58,17 @@ function showError() {
     emailError.className = "error active"; 
 }
 
-function showErrorFor(inputType) { 
-    if (inputType.valdiity.valueMissing) { 
-        
-    }
+function namesShowError() { 
+    var regexForName = /^[a-z ,.'-]+$/i;
+    if (firstName.validity.valueMissing) { 
+        firstNameError.textContent = "You need to enter a name.";
+    } else if (!regexForName.test(firstName)) { 
+            firstNameError.textContent = "Entered value needs to be a valid name."
+    } 
+    firstNameError.className = "error active"; 
 }
 
 
-    var regexForName = /^[a-zA-Z]+ [a-zA-Z]+$/; 
-    if (!regexForName.test(firstName)) { 
-        firstNameError.textContent = "Entered value needs to be a valid name."
-    }
-}
+
+
+
