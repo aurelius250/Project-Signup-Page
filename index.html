@@ -36,12 +36,13 @@
                     <p class = "form-header"> Let's do this! </p>
                 </div>
                
-            <form action="" onsubmit="return verifyPassword()" method="post" id="form1"> 
+            <form action="" method="post" id="form1" novalidate> 
 
                 <div class = "upper-form-div"> 
                         <div class="form-pair"> 
-                            <label for="first">FIRST NAME</label>
-                            <input id="first" name="first" type="text" required>    
+                            <label for="first-name">FIRST NAME</label>
+                            <input id="first-name" name="first-name" type="text" required>    
+                            <span class="error" aria-live="polite"></span> 
                         </div>
 
                         <div class="form-pair"> 
@@ -66,24 +67,25 @@
                 <div class = "upper-form-div"> 
                         <div class="form-pair"> 
                             <label for="pwd">PASSWORD</label>
-                            <input id="pwd" name="pwd" type="password" value="" required>    
+                            <input id="pwd" name="pwd" type="password" required>    
                         </div>
                         <div class="form-pair"> 
-                            <label for="first">CONFIRM PASSWORD</label>
-                            <input id="confirm-pwd" name="confirm-pwd" type="password" value="" required>    
+                            <label for="first-name">CONFIRM PASSWORD</label>
+                            <input id="confirm-pwd" name="confirm-pwd" type="password" required>    
                         </div>
                     </div>
                 </div>
-            </form>
-    
-
             <div class="right-lower-div"> 
-                <button type="button" for="form1"> 
+                <button type="submit" for="form1"> 
                     Create Account
                 </button>
                 <p> Already have an account? <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Log in </a> </p>
 
             </div>
+            </form>
+    
+
+           
         </div>
 
 

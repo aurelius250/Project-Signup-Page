@@ -250,14 +250,14 @@ button + p {
     padding: 0.3em;
 }  
 
-input[type="tel"]:invalid:active { 
+input[type="tel"]:invalid:selection { 
     border: red 5px solid; 
 }
 
-input:invalid { 
+/* input:invalid { 
     border-color: #900; 
     background-color: #fdd; 
-}
+} */
 
 input:focus:invalid { 
     outline: none; 
