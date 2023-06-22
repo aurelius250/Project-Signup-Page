@@ -244,7 +244,6 @@ button + p {
     color: white;
     background-color: #900;
     border-radius: 0 0 5px 5px;
-    box-sizing: border-box;
   }
 
 .error.active {
@@ -255,3 +254,11 @@ input[type="tel"]:invalid:active {
     border: red 5px solid; 
 }
 
+input:invalid { 
+    border-color: #900; 
+    background-color: #fdd; 
+}
+
+input:focus:invalid { 
+    outline: none; 
+}
