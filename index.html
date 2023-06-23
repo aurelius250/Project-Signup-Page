@@ -27,15 +27,18 @@
 
         <div class="right-outer-div">
             <div class="right-upper-div"> 
-                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.
-                </p>
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. 
+                <br> Sign up <i>now</i> to get started.
+                
+                
                 <p> You <i>know</i> you want to.</p>
+                </p>
             </div>
             <div class = "right-middle-div">
                 <div>
                     <p class = "form-header"> Let's do this! </p>
                 </div>
-            <form action="" method="post" id="form1" novalidate> 
+            <form action="https://www.youtube.com/watch?v=dQw4w9WgXcQ" method="POST" id="form1" novalidate> 
                 <div class = "upper-form-div"> 
                         <div class="form-pair"> 
                             <label for="first-name">FIRST NAME</label>
@@ -56,17 +59,22 @@
                         <div class="form-pair"> 
                             <label for="phone-no">PHONE NUMBER</label>
                             <input id="phone-no" name="phone-no" type="tel" required>    
+                            
                         </div>
                 </div>
                 
                 <div class = "upper-form-div"> 
                         <div class="form-pair"> 
                             <label for="pwd">PASSWORD</label>
-                            <input id="pwd" name="pwd" type="password" required>    
+                            <input id="pwd" name="pwd" type="password" minlength = "8" required>   
+                            <span class="error" aria-live="polite"></span> 
+
                         </div>
                         <div class="form-pair"> 
-                            <label for="first-name">CONFIRM PASSWORD</label>
-                            <input id="confirm-pwd" name="confirm-pwd" type="password" required>    
+                            <label for="confirm-pwd">CONFIRM PASSWORD</label>
+                            <input id="confirm-pwd" name="confirm-pwd" minlength = "8" type="password" required>    
+                            <span class="error" aria-live="polite"></span> 
+
                         </div>
                     </div>
                 </div>

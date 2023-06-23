@@ -198,7 +198,7 @@ p > a:visited {
 .form-header { 
     font-weight: bold; 
     font-size: 1.25em;
-    margin-left: 1.8em;
+    margin-left: 1.6em;
     margin-top: 0.95em;
 }
 button:active {
@@ -216,7 +216,7 @@ button {
     width: 13em;
     background-color:burlywood;
     border: none;
-    margin-left: 2.7em; 
+    margin-left: 2.55em; 
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
     margin-top: 2em; 
 }
@@ -233,7 +233,7 @@ textarea:focus {
 button + p { 
     margin-left: 2.8em;
     margin-top: 2em;
-    font-size: 13px;
+    font-size: 0.75em;
     
 }
 
@@ -249,15 +249,6 @@ button + p {
 .error.active {
     padding: 0.3em;
 }  
-
-input[type="tel"]:invalid:selection { 
-    border: red 5px solid; 
-}
-
-/* input:invalid { 
-    border-color: #900; 
-    background-color: #fdd; 
-} */
 
 input:focus:invalid { 
     outline: none; 
