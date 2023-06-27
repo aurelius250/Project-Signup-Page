@@ -167,7 +167,7 @@ label {
 .img-credit { 
     color: white;
     margin-top: auto; 
-    font-size: 0.8em; 
+    font-size: 0.9em; 
     font-weight: 200;
 }
 
@@ -258,10 +258,80 @@ input:focus:invalid {
     body {
         font-size: 18px;
       }
+    
+    .outermost-div { 
+        display: flex;
+        /* border: 5px solid black; */
+        height: 100%;
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+        margin: 0;
+    }
+    .left-outer-div { 
+        width: 100%;
+        height: 27vh;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 4em;
+    }
+    .left-transparent-div { 
+        font-size: 0.75em;
+        width: 100%;
+        height: 40%;
+        margin-bottom: 1em; 
+        padding: 0; 
+    }
+
+    .img-credit { 
+        font-size: 0.5em;
+    }
+    .right-upper-div { 
+        font-size: 0.75em; 
+        width: 100%;
+        padding: 0;
+        padding-left: 2.75em;
+        padding-top: 1.5em;
+        margin: 0;
+    }
+
+    .right-middle-div { 
+        height: 33vh;
+        width: 100vw; 
+        margin: 0;
+        padding: 0;
+    }
+
+    .upper-form-div { 
+        margin: 0; 
+        padding: 0;
+        width: 33%;
+    }  
+
+    input { 
+        margin: 0;
+        width: 35vw;
+        padding: 0;
+    }
+    
 }
 
 @media (min-width: 601px) and (max-width: 900px){ 
+    .right-upper-div { 
+        padding-right: 0;
+    }
 
+    .upper-form-div { 
+        overflow: auto;
+    }
+    
+    .left-transparent-div { 
+        font-size: calc(0.6vw + 0.6vh);
+        padding: 7em;
+    }
+
+   
+  
 }
 
 @media (min-width: 901px) { 
@@ -272,5 +342,3 @@ img {
     max-width: 100%; 
     height: auto;
 }
-
-.container { }
