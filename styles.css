@@ -122,7 +122,7 @@ button {
     /* padding: 0.25em;  */
     width: 100%;
     margin-right: 15em;
-    
+
 }
 
 .right-lower-div { 
@@ -147,7 +147,7 @@ button {
 }
 
 input { 
-    width: 100%;
+    width: 20vw;
     border-color: #E5E7EB;
     box-shadow: none;
     border-radius: 0.3em;
@@ -170,29 +170,23 @@ label {
     font-weight: 200;
 }
 
-p > a { 
-    color: burlywood;
-}
-
-p > a:visited { 
-    color:burlywood;
-}
-
 .img-credit a { 
-    text-underline-position: under
+    text-underline-position: under 
 }
-
 
 .form-pair { 
     display: flex;
     flex-direction: column;
-    margin-right: 3em;
-    width: 20vh;
+    width: 15vw;
     margin-left: 2em;
+    margin-right: 6em;
     margin-bottom: 1em;
 
 }
 
+a:visited { 
+    color: black;
+}
 
 .form-header { 
     font-weight: bold; 
@@ -281,13 +275,14 @@ input:focus:invalid {
     .left-transparent-div { 
         font-size: 0.75em;
         width: 100%;
-        height: 40%;
+        height: 60%;
         margin-bottom: 1em; 
         padding: 0; 
     }
 
     .img-credit { 
         font-size: 0.5em;
+        margin-top: 8em;
     }
     .right-upper-div { 
         font-size: 0.75em; 
