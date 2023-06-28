@@ -73,9 +73,8 @@ button {
 }
 
 .transparent-text { 
-    font-size: 6em;
+    font-size: 4em;
     margin: 0;
-    padding: 0;
     font-family: Quicksand, Times New Roman;
     color: white;
 }
@@ -148,7 +147,7 @@ button {
 }
 
 input { 
-    width: 14em;
+    width: 100%;
     border-color: #E5E7EB;
     box-shadow: none;
     border-radius: 0.3em;
@@ -255,6 +254,10 @@ input:focus:invalid {
 }
 
 @media (max-width: 600px) { 
+    .outermost-div { 
+        font-size: 16px;
+    }
+    
     body {
         font-size: 18px;
       }
@@ -288,10 +291,11 @@ input:focus:invalid {
     }
     .right-upper-div { 
         font-size: 0.75em; 
-        width: 100%;
+        width: 100vw;
         padding: 0;
         padding-left: 2.75em;
         padding-top: 1.5em;
+        padding-right: 2.75em;
         margin: 0;
     }
 
@@ -317,6 +321,11 @@ input:focus:invalid {
 }
 
 @media (min-width: 601px) and (max-width: 900px){ 
+
+    .right-upper-div > p{ 
+        padding-right: 2em;
+    }
+
     .right-upper-div { 
         padding-right: 0;
     }
@@ -326,8 +335,8 @@ input:focus:invalid {
     }
     
     .left-transparent-div { 
-        font-size: calc(0.6vw + 0.6vh);
-        padding: 7em;
+        font-size: 0.75em;
+        padding: 3em;
     }
 
    
